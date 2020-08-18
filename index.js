@@ -21,9 +21,11 @@ function updateObjectWithKeyAndValue(object, key, value) {
  
  
  function destructivelyDeleteFromObjectByKey(object, key) {
-    return delete recipes.prop
+    return delete object.key
    
  }
+ 
+ destructivelyDeleteFromObjectByKey(recipes, "prop")
  
  
  
